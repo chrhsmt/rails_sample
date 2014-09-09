@@ -1,12 +1,12 @@
 source 'https://rubygems.org'
 
 
-groups: %w(development test) do
+group :development, :test do
     # Use sqlite3 as the database for Active Record
     gem 'sqlite3'
 end
 
-groups: %w(production) do 
+group :production do 
     gem 'pg'
 end
 
